@@ -1,0 +1,49 @@
+Okay, here's a summary of the key points discussed in the Engineering Key Review on February 18th, 2021:
+
+**1. Proposal to Break Up the Meeting:**
+
+*   Eric Johnson proposed breaking up the current Engineering Key Review into four department-specific reviews (Development, Quality, Security, and UX) to increase visibility, allow for deeper dives, improve objectivity, and free up Eric's time.
+*   Infrastructure and Support already have their own key reviews.
+*   To avoid adding too many meetings, the proposal is to rotate departments on a two-month cycle (e.g., Development & Quality one month, Security & UX the next).
+*   The group is supportive of trying the proposal, with flexibility to adjust frequency based on department size (e.g., Development might go more frequently).
+
+**2. R&D MR Rate KPIs:**
+
+*   Discussion about the R&D Overall MR Rate and R&D Wider MR Rate KPIs.
+*   Clarification that "wider" MR rate refers to external/community contributions only, not internal contributions outside of a specific team.
+*   Eric initially critiqued the wider MR rate as being duplicative, but this was clarified.
+*   Eric proposed a simpler KPI: **the percentage of total MRs that come from the community**. The group agreed to switch to this metric as it's more easily understood and directly addresses community health.
+*   Lily and Mack will work together to transition to the new KPI.
+
+**3. Data Lag Issue:**
+
+*   Christopher noted a data lag issue affecting the update of development MR rate metrics, particularly for February. The data team is working on it.
+
+**4. Postgres Replication Issue:**
+
+*   Discussion of a Postgres replication issue causing data lag on the secondary host used by the data team.
+*   Steve will own escalations on the infrastructure side.
+*   The issue is attributed to a combination of factors: conflicting query traffic, database tuning, and overall demand on the database layer.
+*   The immediate action is to create a dedicated host for the data team.
+*   Steve will provide an update on the issue at the next Infrastructure Key Review.
+
+**5. Defect Tracking and SLOs:**
+
+*   Mac provided an update on defect tracking against SLOs.
+*   S1 defects are hovering around 80% SLO achievement, S2s at 60%.
+*   Work is underway to measure average open bug age.
+*   Craig noted a spike in mean time to close for S2s.
+*   Christie suggested the spike might be related to a change in severity for MRs to S2.
+*   Sid suggested focusing on open bugs and the percentage of those that are within the SLO time, rather than closed bugs.
+*   Mac will take this feedback and work with Christopher to adjust the metrics.
+
+**6. Key Metrics Review:**
+
+*   Craig reviewed the key meeting metrics and noted that everything looked in line with prior periods and looked good.
+*   Christie called out the SUS score. The decline was the smallest in several quarters, but it's still a decline.
+
+**7. Narrow MR Rate:**
+
+*   Sid noted that the narrow MR rate was below target.
+*   Christopher explained that vacation days in January impacted the rate, but the rate is still higher than the previous year.
+*   Christopher also explained that the target rate was lowered from 11 to 10 as the team is focusing on other metrics such as security and quality.

@@ -1,0 +1,63 @@
+**MEETING SUMMARY:**
+
+**1. Meeting Objectives:**
+    a. Objective 1: Review key engineering metrics and identify areas for improvement.
+    b. Objective 2: Discuss and decide on a proposal to restructure the Engineering Key Review meetings.
+    c. Objective 3: Address ongoing issues impacting engineering performance, such as data lag and defect tracking.
+
+**2. Key Discussion Points:**
+    a. **Proposal to Break Up the Meeting:**
+        Main point 1: Eric proposed breaking up the meeting into four department-specific reviews (Development, Quality, Security, UX).
+        Main point 2: The goal is to increase visibility, allow for deeper dives, improve objectivity, and free up Eric's time.
+        Main point 3: The proposal involves rotating departments on a two-month cycle.
+        Main point 4: The group supports trying the proposal with flexibility to adjust frequency.
+    b. **R&D MR Rate KPIs:**
+        Main point 1: Discussion about the R&D Overall MR Rate and R&D Wider MR Rate KPIs.
+        Main point 2: Clarification that "wider" MR rate refers to external/community contributions.
+        Main point 3: Eric proposed a simpler KPI: the percentage of total MRs that come from the community.
+        Main point 4: The group agreed to switch to the new KPI.
+    c. **Data Lag Issue:**
+        Main point 1: Christopher noted a data lag issue affecting the update of development MR rate metrics.
+        Main point 2: The data team is working on resolving the issue.
+    d. **Postgres Replication Issue:**
+        Main point 1: Discussion of a Postgres replication issue causing data lag on the secondary host.
+        Main point 2: Steve will own escalations on the infrastructure side.
+        Main point 3: The immediate action is to create a dedicated host for the data team.
+        Main point 4: Steve will provide an update at the next Infrastructure Key Review.
+    e. **Defect Tracking and SLOs:**
+        Main point 1: Mac provided an update on defect tracking against SLOs.
+        Main point 2: S1 defects are hovering around 80% SLO achievement, S2s at 60%.
+        Main point 3: Work is underway to measure average open bug age.
+        Main point 4: Sid suggested focusing on open bugs within the SLO time, rather than closed bugs.
+    f. **Key Metrics Review:**
+        Main point 1: Craig reviewed the key meeting metrics and noted that everything looked in line with prior periods.
+        Main point 2: Christie called out the SUS score, noting a slight decline.
+    g. **Narrow MR Rate:**
+        Main point 1: Sid noted that the narrow MR rate was below target.
+        Main point 2: Christopher explained that vacation days in January impacted the rate.
+        Main point 3: Christopher also explained that the target rate was lowered from 11 to 10 as the team is focusing on other metrics such as security and quality.
+
+**3. Important Decisions:**
+    a. Decision 1: To trial breaking up the Engineering Key Review into four department-specific reviews (Development, Quality, Security, UX) on a rotating two-month cycle. Rationale: To increase visibility, allow for deeper dives, improve objectivity, and free up Eric's time.
+    b. Decision 2: To switch the R&D Wider MR Rate KPI to the percentage of total MRs that come from the community. Rationale: This metric is more easily understood and directly addresses community health.
+    c. Decision 3: To create a dedicated host for the data team to address the Postgres replication issue. Rationale: To alleviate data lag on the secondary host.
+
+**4. Action Items:**
+    a. Action Item 1: Lily and Mack will work together to transition to the new KPI for R&D Wider MR Rate (percentage of total MRs that come from the community). - [No specific deadline mentioned]
+    b. Action Item 2: Steve will own escalations on the infrastructure side regarding the Postgres replication issue. - [No specific deadline mentioned]
+    c. Action Item 3: Steve will provide an update on the Postgres replication issue at the next Infrastructure Key Review. - [Next Infrastructure Key Review]
+    d. Action Item 4: Mac will take feedback from Sid and work with Christopher to adjust the defect tracking metrics, focusing on open bugs within the SLO time. - [No specific deadline mentioned]
+
+**5. Meeting Outcomes:**
+    a. Objective 1: Partially Achieved. Key engineering metrics were reviewed, and areas for improvement (e.g., defect tracking, SUS score) were identified.
+    b. Objective 2: Achieved. A decision was made to trial a new meeting structure to improve efficiency and focus.
+    c. Objective 3: Partially Achieved. Ongoing issues like data lag and defect tracking were discussed, and action items were assigned to address them.
+
+**6. Next Steps:**
+    a. Next Meeting Date: Not specified in the transcript.
+    b. Agenda Items for Next Meeting:
+        *   Update on the Postgres replication issue (from Steve).
+        *   Review of adjusted defect tracking metrics (from Mac and Christopher).
+        *   Review of the new R&D Wider MR Rate KPI (from Lily and Mack).
+        *   Feedback on the new Engineering Key Review meeting structure after the first cycle.
+    c. Additional Follow-up: Monitor the SUS score to see if the decline can be reversed.
