@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meeting Notes AI</title>
+    <link rel="icon" type="image/png" href="/static/favicon.png">
+    <link rel="stylesheet" href="/static/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Meeting Notes AI</h1>
+            <p>Upload your meeting audio to generate a structured summary.</p>
+        </header>
+
+        <main>
+            <div class="upload-section" id="upload-section">
+                <input type="file" id="file-input" accept="audio/*,video/*" hidden>
+                <label for="file-input" class="upload-box">
+                    <div class="icon">📁</div>
+                    <p>Click to upload or drag and drop</p>
+                    <p class="subtext">Supported formats: WAV, MP3, MP4</p>
+                </label>
+            </div>
+
+            <div class="status-section hidden" id="status-section">
+                <div class="loader"></div>
+                <p id="status-text">Processing...</p>
+            </div>
+
+            <div class="result-section hidden" id="result-section">
+                <div class="tabs">
+                    <button class="tab-btn active" onclick="openTab('summary')">Meeting Summary</button>
+                    <button class="tab-btn" onclick="openTab('transcription')">Transcription</button>
+                </div>
+
+                <div id="summary" class="tab-content active">
+                    <div class="content-header">
+                        <h3>Meeting Summary</h3>
+                        <button class="btn-secondary" onclick="copyToClipboard('summary-content')">📋 Copy Text</button>
+                    </div>
+                    <pre id="summary-content"></pre>
+                </div>
+
+                <div id="transcription" class="tab-content">
+                    <div class="content-header">
+                        <h3>Transcription</h3>
+                        <button class="btn-secondary" onclick="copyToClipboard('transcription-content')">📋 Copy
+                            Text</button>
+                    </div>
+                    <pre id="transcription-content"></pre>
+                </div>
+
+                <button class="btn-primary" onclick="reset()">Process Another File</button>
+            </div>
+        </main>
+    </div>
+    <script src="/static/script.js"></script>
+</body>
+
+</html>

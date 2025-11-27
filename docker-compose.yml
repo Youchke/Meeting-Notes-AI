@@ -6,8 +6,12 @@ services:
     image: meeting-summary-generator
     container_name: meeting-summarizer
     volumes:
-      - ./projects:/app/projects
+
+      - ./src:/app/src
+    command: uvicorn app:app --host 0.0.0.0 --port 8000 --reload
     environment:
       - GEMINI_API_KEY=${GEMINI_API_KEY}
+    ports:
+      - "8000:8000"
     stdin_open: true # docker run -i
     tty: true        # docker run -t

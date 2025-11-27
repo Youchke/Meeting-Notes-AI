@@ -22,4 +22,4 @@ ENV PYTHONPATH="${PYTHONPATH}:/app/src"
 COPY . .
 
 # Run main.py when the container launches
-CMD ["python", "main.py"]
+CMD ["uvicorn", "app:app", "--host", "0.0.0.0", "--port", "8000"]
