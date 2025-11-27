@@ -62,7 +62,7 @@ Ouvrez votre navigateur et allez sur :
 ## 📂 Structure du Projet
 
 ```
-meeting-summary-generator/
+Meeting-Notes-AI/
 ├── Dockerfile              # Configuration de l'image Docker
 ├── docker-compose.yml      # Orchestration des services
 ├── requirements.txt        # Dépendances Python
